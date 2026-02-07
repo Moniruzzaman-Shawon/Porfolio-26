@@ -14,10 +14,15 @@ node_modules/
 
 # production
 /build
+/dist
 
 # misc
 .DS_Store
 *.pem
+Thumbs.db
+*.swp
+*.swo
+*~
 
 # debug
 npm-debug.log*
@@ -28,6 +33,7 @@ yarn-error.log*
 # env files
 .env
 .env*.local
+.env.production
 
 # typescript
 *.tsbuildinfo
@@ -36,3 +42,22 @@ next-env.d.ts
 # prisma
 prisma/dev.db
 prisma/dev.db-journal
+
+# claude code
+.claude/
+
+# editor / IDE
+.vscode/
+.idea/
+*.code-workspace
+
+# OS
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# coverage
+coverage/
+
+# vercel
+.vercel
