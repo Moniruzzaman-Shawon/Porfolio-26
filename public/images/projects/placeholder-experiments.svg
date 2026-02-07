@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="rgba(255,255,255,0.04)"/>
+    </pattern>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="rgba(0,255,136,0.15)"/>
+      <stop offset="100%" stop-color="rgba(0,255,136,0)"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <!-- Game window frame -->
+  <rect x="100" y="60" width="600" height="380" rx="12" fill="#111621" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect x="100" y="60" width="600" height="36" rx="12" fill="#161c2a"/>
+  <rect x="100" y="84" width="600" height="12" fill="#161c2a"/>
+  <circle cx="124" cy="78" r="5" fill="#ff5f57" opacity="0.7"/>
+  <circle cx="144" cy="78" r="5" fill="#ffbd2e" opacity="0.7"/>
+  <circle cx="164" cy="78" r="5" fill="#28ca42" opacity="0.7"/>
+  <!-- Game grid -->
+  <rect x="120" y="108" width="420" height="320" fill="#0a0d14" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <!-- Grid lines -->
+  <line x1="120" y1="188" x2="540" y2="188" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <line x1="120" y1="268" x2="540" y2="268" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <line x1="120" y1="348" x2="540" y2="348" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <line x1="225" y1="108" x2="225" y2="428" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <line x1="330" y1="108" x2="330" y2="428" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <line x1="435" y1="108" x2="435" y2="428" stroke="rgba(255,255,255,0.02)" stroke-width="1"/>
+  <!-- Path -->
+  <rect x="160" y="148" width="60" height="60" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="220" y="148" width="60" height="60" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="280" y="148" width="60" height="60" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="280" y="208" width="60" height="60" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="280" y="268" width="60" height="60" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="340" y="268" width="60" height="60" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="400" y="268" width="60" height="60" rx="4" fill="rgba(255,255,255,0.02)" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- Tower -->
+  <rect x="230" y="230" width="40" height="40" rx="6" fill="rgba(0,255,136,0.15)" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
+  <circle cx="250" cy="250" r="30" fill="none" stroke="rgba(0,255,136,0.08)" stroke-width="1" stroke-dasharray="4 4"/>
+  <!-- Tower 2 -->
+  <rect x="350" y="310" width="40" height="40" rx="6" fill="rgba(136,100,255,0.15)" stroke="rgba(136,100,255,0.3)" stroke-width="1"/>
+  <circle cx="370" cy="330" r="30" fill="none" stroke="rgba(136,100,255,0.08)" stroke-width="1" stroke-dasharray="4 4"/>
+  <!-- Enemy dots on path -->
+  <circle cx="190" cy="178" r="6" fill="#ff5f57" opacity="0.6"/>
+  <circle cx="310" cy="178" r="6" fill="#ff5f57" opacity="0.5"/>
+  <circle cx="310" cy="298" r="6" fill="#ff5f57" opacity="0.4"/>
+  <!-- HUD panel -->
+  <rect x="558" y="108" width="124" height="320" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- HUD items -->
+  <text x="580" y="138" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">WAVE</text>
+  <text x="580" y="158" fill="#00ff88" font-family="monospace" font-size="20" font-weight="bold">03</text>
+  <line x1="574" y1="174" x2="666" y2="174" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="580" y="196" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">SCORE</text>
+  <text x="580" y="216" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="18">1250</text>
+  <line x1="574" y1="232" x2="666" y2="232" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="580" y="254" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">HEALTH</text>
+  <rect x="580" y="262" width="80" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="580" y="262" width="60" height="8" rx="4" fill="rgba(0,255,136,0.4)"/>
+</svg>

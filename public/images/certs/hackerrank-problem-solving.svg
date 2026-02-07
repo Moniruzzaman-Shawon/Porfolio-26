@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg-grad-ps" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="50%" stop-color="#0e1219"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <linearGradient id="border-grad-ps" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ea64" stop-opacity="0.5"/>
+      <stop offset="25%" stop-color="#00ea64" stop-opacity="0.1"/>
+      <stop offset="50%" stop-color="#00ea64" stop-opacity="0.5"/>
+      <stop offset="75%" stop-color="#00ea64" stop-opacity="0.1"/>
+      <stop offset="100%" stop-color="#00ea64" stop-opacity="0.5"/>
+    </linearGradient>
+    <linearGradient id="accent-line-ps" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00ea64" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00ea64" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#00ea64" stop-opacity="0"/>
+    </linearGradient>
+    <radialGradient id="glow-ps" cx="50%" cy="40%" r="45%">
+      <stop offset="0%" stop-color="#00ea64" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#00ea64" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow-ps" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#00ea64" flood-opacity="0.12"/>
+    </filter>
+    <pattern id="grid-ps" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00ea64" stroke-opacity="0.025" stroke-width="0.5"/>
+    </pattern>
+    <clipPath id="cert-clip-ps">
+      <rect x="16" y="16" width="768" height="468" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad-ps)" rx="12"/>
+
+  <!-- Grid pattern overlay -->
+  <rect x="16" y="16" width="768" height="468" fill="url(#grid-ps)" clip-path="url(#cert-clip-ps)" rx="8"/>
+
+  <!-- Outer border -->
+  <rect x="4" y="4" width="792" height="492" rx="10" fill="none" stroke="url(#border-grad-ps)" stroke-width="1.5"/>
+
+  <!-- Inner double border -->
+  <rect x="16" y="16" width="768" height="468" rx="8" fill="none" stroke="#00ea64" stroke-opacity="0.1" stroke-width="1"/>
+  <rect x="24" y="24" width="752" height="452" rx="6" fill="none" stroke="#00ea64" stroke-opacity="0.06" stroke-width="0.5" stroke-dasharray="4 4"/>
+
+  <!-- Background algorithm decoration -->
+  <g clip-path="url(#cert-clip-ps)" opacity="0.03">
+    <text font-family="'Courier New', monospace" font-size="10" fill="#00ea64">
+      <tspan x="520" y="60">// Binary Search</tspan>
+      <tspan x="520" y="74">function search(arr, t) {</tspan>
+      <tspan x="520" y="88">  let lo = 0, hi = arr.length;</tspan>
+      <tspan x="520" y="102">  while (lo &lt; hi) {</tspan>
+      <tspan x="520" y="116">    let mid = (lo+hi) &gt;&gt; 1;</tspan>
+      <tspan x="520" y="130">    if (arr[mid] &lt; t) lo = mid+1;</tspan>
+      <tspan x="520" y="144">    else hi = mid;</tspan>
+      <tspan x="520" y="158">  }</tspan>
+      <tspan x="520" y="172">  return lo;</tspan>
+      <tspan x="520" y="186">}</tspan>
+      <tspan x="520" y="210">// Graph BFS</tspan>
+      <tspan x="520" y="224">function bfs(graph, start) {</tspan>
+      <tspan x="520" y="238">  let queue = [start];</tspan>
+      <tspan x="520" y="252">  let visited = new Set();</tspan>
+      <tspan x="520" y="266">  visited.add(start);</tspan>
+      <tspan x="520" y="280">  while (queue.length) {</tspan>
+      <tspan x="520" y="294">    let node = queue.shift();</tspan>
+      <tspan x="520" y="308">    for (let n of graph[node])</tspan>
+      <tspan x="520" y="322">      if (!visited.has(n)) {</tspan>
+      <tspan x="520" y="336">        visited.add(n);</tspan>
+      <tspan x="520" y="350">        queue.push(n);</tspan>
+      <tspan x="520" y="364">      }</tspan>
+      <tspan x="520" y="378">  }</tspan>
+      <tspan x="520" y="392">}</tspan>
+    </text>
+  </g>
+
+  <!-- Center glow -->
+  <ellipse cx="400" cy="220" rx="320" ry="180" fill="url(#glow-ps)"/>
+
+  <!-- Top left decorative bracket -->
+  <g stroke="#00ea64" stroke-opacity="0.2" stroke-width="1.5" fill="none">
+    <path d="M 44 70 L 44 44 L 70 44"/>
+    <path d="M 52 78 L 52 52 L 78 52"/>
+  </g>
+  <!-- Top right decorative bracket -->
+  <g stroke="#00ea64" stroke-opacity="0.2" stroke-width="1.5" fill="none">
+    <path d="M 756 70 L 756 44 L 730 44"/>
+    <path d="M 748 78 L 748 52 L 722 52"/>
+  </g>
+  <!-- Bottom left decorative bracket -->
+  <g stroke="#00ea64" stroke-opacity="0.2" stroke-width="1.5" fill="none">
+    <path d="M 44 430 L 44 456 L 70 456"/>
+    <path d="M 52 422 L 52 448 L 78 448"/>
+  </g>
+  <!-- Bottom right decorative bracket -->
+  <g stroke="#00ea64" stroke-opacity="0.2" stroke-width="1.5" fill="none">
+    <path d="M 756 430 L 756 456 L 730 456"/>
+    <path d="M 748 422 L 748 448 L 722 448"/>
+  </g>
+
+  <!-- HackerRank Logo Mark (stylized H) -->
+  <g transform="translate(400, 85)" filter="url(#shadow-ps)">
+    <path d="M -22 -26 L -22 -6 L -6 -6 L -6 -26 L -12 -30 L -22 -26 Z" fill="#00ea64"/>
+    <path d="M 6 -26 L 6 -6 L 22 -6 L 22 -26 L 12 -30 L 6 -26 Z" fill="#00ea64"/>
+    <path d="M -22 6 L -22 26 L -12 30 L -6 26 L -6 6 Z" fill="#00ea64"/>
+    <path d="M 6 6 L 6 26 L 12 30 L 22 26 L 22 6 Z" fill="#00ea64"/>
+    <rect x="-6" y="-4" width="12" height="8" fill="#00ea64"/>
+  </g>
+
+  <!-- HackerRank text -->
+  <text x="400" y="136" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="13" font-weight="600" fill="#00ea64" letter-spacing="4">HACKERRANK</text>
+
+  <!-- Accent line -->
+  <line x1="160" y1="152" x2="640" y2="152" stroke="url(#accent-line-ps)" stroke-width="1"/>
+
+  <!-- Certificate label -->
+  <text x="400" y="182" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#7a8494" letter-spacing="5">CERTIFICATE OF ACCOMPLISHMENT</text>
+
+  <!-- Title -->
+  <text x="400" y="225" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="32" font-weight="700" fill="#e8eaed" letter-spacing="0.5">Problem Solving (Basic)</text>
+
+  <!-- Decorative dots under title -->
+  <g fill="#00ea64" opacity="0.4">
+    <circle cx="370" cy="244" r="2"/>
+    <circle cx="385" cy="244" r="2"/>
+    <circle cx="400" cy="244" r="2"/>
+    <circle cx="415" cy="244" r="2"/>
+    <circle cx="430" cy="244" r="2"/>
+  </g>
+
+  <!-- Awarded to label -->
+  <text x="400" y="278" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#6b7688" letter-spacing="2">AWARDED TO</text>
+
+  <!-- Name -->
+  <text x="400" y="314" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="26" fill="#ffffff" font-style="italic">Moniruzzaman Shawon</text>
+
+  <!-- Name underline -->
+  <line x1="250" y1="326" x2="550" y2="326" stroke="#00ea64" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- Description -->
+  <text x="400" y="356" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#6b7688">for demonstrating fundamental problem solving skills</text>
+
+  <!-- Bottom section with three columns -->
+  <g>
+    <!-- Credential ID (left) -->
+    <text x="80" y="418" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#5a6475" letter-spacing="1.5">CREDENTIAL ID</text>
+    <text x="80" y="438" font-family="'Courier New', monospace" font-size="13" fill="#00ea64" opacity="0.7">5421ee691a06</text>
+
+    <!-- Hexagonal seal (center) -->
+    <g transform="translate(400, 425)">
+      <polygon points="0,-30 26,-15 26,15 0,30 -26,15 -26,-15" fill="none" stroke="#00ea64" stroke-opacity="0.25" stroke-width="1"/>
+      <polygon points="0,-22 19,-11 19,11 0,22 -19,11 -19,-11" fill="none" stroke="#00ea64" stroke-opacity="0.15" stroke-width="0.5"/>
+      <polygon points="0,-14 12,-7 12,7 0,14 -12,7 -12,-7" fill="#00ea64" fill-opacity="0.06" stroke="#00ea64" stroke-opacity="0.1" stroke-width="0.5"/>
+      <text y="1" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="6" fill="#00ea64" opacity="0.5" letter-spacing="0.5" font-weight="600">VALID</text>
+    </g>
+
+    <!-- Issuer (right) -->
+    <text x="720" y="418" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#5a6475" letter-spacing="1.5">ISSUED BY</text>
+    <text x="720" y="438" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#8b95a5">HackerRank</text>
+  </g>
+
+  <!-- Left accent bar -->
+  <rect x="16" y="16" width="3" height="468" rx="1" fill="#00ea64" opacity="0.4"/>
+
+  <!-- Top thin line accent -->
+  <rect x="16" y="16" width="768" height="2" rx="1" fill="#00ea64" opacity="0.35"/>
+</svg>

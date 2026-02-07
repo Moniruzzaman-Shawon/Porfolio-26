@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="rgba(255,255,255,0.04)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <!-- Terminal window -->
+  <rect x="100" y="60" width="600" height="380" rx="12" fill="#111621" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect x="100" y="60" width="600" height="36" rx="12" fill="#161c2a"/>
+  <rect x="100" y="84" width="600" height="12" fill="#161c2a"/>
+  <circle cx="124" cy="78" r="5" fill="#ff5f57" opacity="0.7"/>
+  <circle cx="144" cy="78" r="5" fill="#ffbd2e" opacity="0.7"/>
+  <circle cx="164" cy="78" r="5" fill="#28ca42" opacity="0.7"/>
+  <text x="370" y="82" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="11">api-server</text>
+  <!-- Code lines -->
+  <text x="128" y="124" fill="#00ff88" font-family="monospace" font-size="12" opacity="0.8">$</text>
+  <text x="145" y="124" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="12">GET /api/v1/resources</text>
+  <text x="128" y="152" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="11">{</text>
+  <text x="148" y="172" fill="rgba(0,255,136,0.5)" font-family="monospace" font-size="11">"status"</text>
+  <text x="218" y="172" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="11">:</text>
+  <text x="230" y="172" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="11">200,</text>
+  <text x="148" y="192" fill="rgba(0,255,136,0.5)" font-family="monospace" font-size="11">"data"</text>
+  <text x="204" y="192" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="11">: [</text>
+  <text x="168" y="212" fill="rgba(255,255,255,0.15)" font-family="monospace" font-size="11">{ "id": 1, "name": "..." },</text>
+  <text x="168" y="232" fill="rgba(255,255,255,0.15)" font-family="monospace" font-size="11">{ "id": 2, "name": "..." },</text>
+  <text x="168" y="252" fill="rgba(255,255,255,0.15)" font-family="monospace" font-size="11">{ "id": 3, "name": "..." }</text>
+  <text x="148" y="272" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="11">],</text>
+  <text x="148" y="292" fill="rgba(0,255,136,0.5)" font-family="monospace" font-size="11">"total"</text>
+  <text x="214" y="292" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="11">:</text>
+  <text x="226" y="292" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="11">42</text>
+  <text x="128" y="312" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="11">}</text>
+  <!-- Status indicator -->
+  <text x="128" y="348" fill="#00ff88" font-family="monospace" font-size="12" opacity="0.8">$</text>
+  <rect x="145" y="338" width="8" height="14" fill="#00ff88" opacity="0.4">
+    <animate attributeName="opacity" values="0.4;0;0.4" dur="1.2s" repeatCount="indefinite"/>
+  </rect>
+  <!-- Accent -->
+  <rect x="100" y="96" width="600" height="1" fill="rgba(0,255,136,0.1)"/>
+</svg>

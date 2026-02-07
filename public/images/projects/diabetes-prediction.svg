@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="rgba(255,255,255,0.04)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <!-- Dashboard frame -->
+  <rect x="80" y="40" width="640" height="420" rx="12" fill="#111621" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="80" y="40" width="640" height="36" rx="12" fill="#161c2a"/>
+  <rect x="80" y="64" width="640" height="12" fill="#161c2a"/>
+  <circle cx="104" cy="58" r="5" fill="#ff5f57" opacity="0.7"/>
+  <circle cx="124" cy="58" r="5" fill="#ffbd2e" opacity="0.7"/>
+  <circle cx="144" cy="58" r="5" fill="#28ca42" opacity="0.7"/>
+  <text x="400" y="62" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="11">diabetes-prediction — evaluation</text>
+  <!-- Title -->
+  <text x="110" y="104" fill="rgba(255,255,255,0.8)" font-family="sans-serif" font-size="15" font-weight="bold">Diabetes Risk Prediction</text>
+  <text x="110" y="122" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">Supervised ML · 767 samples · 8 features · GridSearchCV</text>
+  <!-- Model comparison -->
+  <text x="110" y="154" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">MODEL RANKING</text>
+  <!-- Logistic Regression (best) -->
+  <text x="110" y="178" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Logistic Regression</text>
+  <rect x="260" y="168" width="300" height="14" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="260" y="168" width="230" height="14" rx="4" fill="rgba(0,255,136,0.3)"/>
+  <text x="570" y="179" fill="#00ff88" font-family="monospace" font-size="11" font-weight="bold">76.6%</text>
+  <!-- Random Forest -->
+  <text x="110" y="204" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Random Forest</text>
+  <rect x="260" y="194" width="300" height="14" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="260" y="194" width="226" height="14" rx="4" fill="rgba(0,200,255,0.2)"/>
+  <text x="570" y="205" fill="rgba(0,200,255,0.8)" font-family="monospace" font-size="11" font-weight="bold">75.3%</text>
+  <!-- SVM -->
+  <text x="110" y="230" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">SVM (RBF)</text>
+  <rect x="260" y="220" width="300" height="14" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="260" y="220" width="224" height="14" rx="4" fill="rgba(180,140,255,0.18)"/>
+  <text x="570" y="231" fill="rgba(180,140,255,0.8)" font-family="monospace" font-size="11" font-weight="bold">74.7%</text>
+  <!-- KNN -->
+  <text x="110" y="256" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">KNN (k=5)</text>
+  <rect x="260" y="246" width="300" height="14" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="260" y="246" width="218" height="14" rx="4" fill="rgba(255,180,46,0.15)"/>
+  <text x="570" y="257" fill="rgba(255,180,46,0.8)" font-family="monospace" font-size="11" font-weight="bold">72.7%</text>
+  <!-- Divider -->
+  <line x1="110" y1="276" x2="690" y2="276" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- Classification report -->
+  <text x="110" y="300" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">BEST MODEL — CLASSIFICATION REPORT</text>
+  <!-- Table header -->
+  <text x="110" y="324" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">CLASS</text>
+  <text x="220" y="324" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">PRECISION</text>
+  <text x="320" y="324" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">RECALL</text>
+  <text x="410" y="324" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">F1</text>
+  <text x="480" y="324" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">SUPPORT</text>
+  <!-- No Diabetes -->
+  <text x="110" y="346" fill="rgba(0,255,136,0.7)" font-family="monospace" font-size="10">No Diabetes</text>
+  <text x="240" y="346" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">0.78</text>
+  <text x="336" y="346" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">0.87</text>
+  <text x="418" y="346" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">0.82</text>
+  <text x="500" y="346" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">100</text>
+  <!-- Diabetes -->
+  <text x="110" y="366" fill="rgba(255,140,60,0.7)" font-family="monospace" font-size="10">Diabetes</text>
+  <text x="240" y="366" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">0.70</text>
+  <text x="336" y="366" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">0.56</text>
+  <text x="418" y="366" fill="rgba(255,255,255,0.6)" font-family="monospace" font-size="10">0.62</text>
+  <text x="500" y="366" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">54</text>
+  <!-- Divider -->
+  <line x1="110" y1="380" x2="550" y2="380" stroke="rgba(255,255,255,0.03)" stroke-width="1"/>
+  <!-- Features sidebar -->
+  <rect x="570" y="296" width="120" height="156" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="586" y="316" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">FEATURES</text>
+  <text x="586" y="336" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">Glucose</text>
+  <text x="586" y="352" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">BMI</text>
+  <text x="586" y="368" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">Age</text>
+  <text x="586" y="384" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">BloodPressure</text>
+  <text x="586" y="400" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">Insulin</text>
+  <text x="586" y="416" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">Pregnancies</text>
+  <text x="586" y="432" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">SkinThickness</text>
+  <text x="586" y="448" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">Pedigree</text>
+  <!-- Accuracy badge -->
+  <rect x="110" y="394" width="140" height="52" rx="8" fill="#0e1219" stroke="rgba(0,255,136,0.15)" stroke-width="1"/>
+  <text x="126" y="414" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">BEST ACCURACY</text>
+  <text x="126" y="438" fill="#00ff88" font-family="sans-serif" font-size="22" font-weight="bold">76.62%</text>
+  <rect x="264" y="394" width="140" height="52" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="280" y="414" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">DATASET</text>
+  <text x="280" y="438" fill="rgba(255,255,255,0.6)" font-family="sans-serif" font-size="22" font-weight="bold">767</text>
+</svg>

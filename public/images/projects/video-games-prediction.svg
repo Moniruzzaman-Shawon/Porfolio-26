@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="rgba(255,255,255,0.04)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <!-- Gradio-style frame -->
+  <rect x="80" y="40" width="640" height="420" rx="12" fill="#111621" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="80" y="40" width="640" height="36" rx="12" fill="#161c2a"/>
+  <rect x="80" y="64" width="640" height="12" fill="#161c2a"/>
+  <circle cx="104" cy="58" r="5" fill="#ff5f57" opacity="0.7"/>
+  <circle cx="124" cy="58" r="5" fill="#ffbd2e" opacity="0.7"/>
+  <circle cx="144" cy="58" r="5" fill="#28ca42" opacity="0.7"/>
+  <text x="400" y="62" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="11">Hugging Face Spaces · Gradio</text>
+  <!-- Title -->
+  <text x="110" y="104" fill="rgba(255,255,255,0.8)" font-family="sans-serif" font-size="15" font-weight="bold">Video Games Hit Prediction</text>
+  <text x="110" y="122" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">RandomForest · Binary Classification · Global Sales >= 1M</text>
+  <!-- Input panel -->
+  <rect x="110" y="138" width="270" height="296" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="126" y="162" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">INPUT FEATURES</text>
+  <!-- Dropdowns -->
+  <text x="126" y="188" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Platform</text>
+  <rect x="126" y="194" width="236" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="140" y="211" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">PS4</text>
+  <text x="126" y="238" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Genre</text>
+  <rect x="126" y="244" width="236" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="140" y="261" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Action</text>
+  <text x="126" y="288" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Year</text>
+  <rect x="126" y="294" width="236" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="140" y="311" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">2024</text>
+  <!-- Sales inputs -->
+  <text x="126" y="340" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">NA Sales (M)</text>
+  <rect x="126" y="346" width="108" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="140" y="363" fill="rgba(0,255,136,0.6)" font-family="monospace" font-size="10">0.85</text>
+  <text x="248" y="340" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">EU Sales (M)</text>
+  <rect x="248" y="346" width="114" height="26" rx="6" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="262" y="363" fill="rgba(0,255,136,0.6)" font-family="monospace" font-size="10">0.42</text>
+  <!-- Predict button -->
+  <rect x="126" y="388" width="236" height="32" rx="8" fill="rgba(0,255,136,0.15)" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
+  <text x="244" y="408" text-anchor="middle" fill="#00ff88" font-family="sans-serif" font-size="12" font-weight="bold">Predict</text>
+  <!-- Output panel -->
+  <rect x="400" y="138" width="300" height="296" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="416" y="162" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">PREDICTION RESULT</text>
+  <!-- Result badge -->
+  <rect x="416" y="180" width="268" height="80" rx="10" fill="rgba(0,255,136,0.06)" stroke="rgba(0,255,136,0.15)" stroke-width="1"/>
+  <text x="550" y="216" text-anchor="middle" fill="#00ff88" font-family="sans-serif" font-size="32" font-weight="bold">HIT</text>
+  <text x="550" y="248" text-anchor="middle" fill="rgba(0,255,136,0.5)" font-family="monospace" font-size="11">>= 1M Global Sales</text>
+  <!-- Probability -->
+  <text x="416" y="292" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">HIT PROBABILITY</text>
+  <rect x="416" y="300" width="268" height="18" rx="6" fill="rgba(255,255,255,0.04)"/>
+  <rect x="416" y="300" width="230" height="18" rx="6" fill="rgba(0,255,136,0.2)"/>
+  <text x="656" y="313" fill="#00ff88" font-family="monospace" font-size="11" font-weight="bold">0.86</text>
+  <!-- Model info -->
+  <text x="416" y="348" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">MODEL</text>
+  <text x="416" y="366" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">RandomForestClassifier</text>
+  <text x="416" y="390" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">PLATFORMS: 31 · GENRES: 12</text>
+  <text x="416" y="406" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">FEATURES: Sales + Metadata</text>
+  <!-- HF badge -->
+  <rect x="416" y="418" width="80" height="14" rx="4" fill="rgba(255,180,46,0.15)"/>
+  <text x="424" y="429" fill="rgba(255,180,46,0.7)" font-family="monospace" font-size="8">HuggingFace</text>
+</svg>

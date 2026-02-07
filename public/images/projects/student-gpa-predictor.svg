@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="rgba(255,255,255,0.04)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <!-- Gradio frame -->
+  <rect x="80" y="40" width="640" height="420" rx="12" fill="#111621" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <rect x="80" y="40" width="640" height="36" rx="12" fill="#161c2a"/>
+  <rect x="80" y="64" width="640" height="12" fill="#161c2a"/>
+  <circle cx="104" cy="58" r="5" fill="#ff5f57" opacity="0.7"/>
+  <circle cx="124" cy="58" r="5" fill="#ffbd2e" opacity="0.7"/>
+  <circle cx="144" cy="58" r="5" fill="#28ca42" opacity="0.7"/>
+  <text x="400" y="62" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="11">Hugging Face Spaces · Gradio</text>
+  <!-- Title -->
+  <text x="110" y="104" fill="rgba(255,255,255,0.8)" font-family="sans-serif" font-size="15" font-weight="bold">Student HSC GPA Predictor</text>
+  <text x="110" y="122" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">RandomForest Pipeline · Regression · 14 Features · GPA 0-5</text>
+  <!-- Input panel -->
+  <rect x="110" y="138" width="270" height="296" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="126" y="162" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">STUDENT PROFILE</text>
+  <!-- Input fields grid -->
+  <text x="126" y="186" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Gender</text>
+  <rect x="126" y="192" width="108" height="24" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="140" y="208" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Male</text>
+  <text x="248" y="186" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Age</text>
+  <rect x="248" y="192" width="114" height="24" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="262" y="208" fill="rgba(0,255,136,0.6)" font-family="monospace" font-size="10">18</text>
+  <text x="126" y="234" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Address</text>
+  <rect x="126" y="240" width="108" height="24" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="140" y="256" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Urban</text>
+  <text x="248" y="234" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Family Size</text>
+  <rect x="248" y="240" width="114" height="24" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="262" y="256" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">GT3</text>
+  <text x="126" y="282" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Mother Edu (0-4)</text>
+  <rect x="126" y="288" width="108" height="24" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="140" y="304" fill="rgba(0,255,136,0.6)" font-family="monospace" font-size="10">3</text>
+  <text x="248" y="282" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">Father Edu (0-4)</text>
+  <rect x="248" y="288" width="114" height="24" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <text x="262" y="304" fill="rgba(0,255,136,0.6)" font-family="monospace" font-size="10">4</text>
+  <text x="126" y="332" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">SSC Result (GPA)</text>
+  <rect x="126" y="338" width="236" height="24" rx="5" fill="rgba(255,255,255,0.03)" stroke="rgba(0,255,136,0.15)" stroke-width="1"/>
+  <text x="140" y="354" fill="#00ff88" font-family="monospace" font-size="10">4.50</text>
+  <!-- Predict button -->
+  <rect x="126" y="382" width="236" height="32" rx="8" fill="rgba(0,255,136,0.15)" stroke="rgba(0,255,136,0.3)" stroke-width="1"/>
+  <text x="244" y="402" text-anchor="middle" fill="#00ff88" font-family="sans-serif" font-size="12" font-weight="bold">Predict HSC GPA</text>
+  <!-- Output panel -->
+  <rect x="400" y="138" width="300" height="296" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="416" y="162" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">PREDICTED RESULT</text>
+  <!-- GPA result -->
+  <rect x="416" y="180" width="268" height="100" rx="10" fill="rgba(0,255,136,0.06)" stroke="rgba(0,255,136,0.15)" stroke-width="1"/>
+  <text x="550" y="210" text-anchor="middle" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="11">Predicted HSC GPA</text>
+  <text x="550" y="256" text-anchor="middle" fill="#00ff88" font-family="sans-serif" font-size="42" font-weight="bold">4.32</text>
+  <!-- Scale bar -->
+  <text x="416" y="308" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">GPA SCALE</text>
+  <rect x="416" y="316" width="268" height="12" rx="6" fill="rgba(255,255,255,0.04)"/>
+  <rect x="416" y="316" width="232" height="12" rx="6" fill="rgba(0,255,136,0.2)"/>
+  <text x="416" y="342" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">0.00</text>
+  <text x="660" y="342" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">5.00</text>
+  <!-- Model details -->
+  <text x="416" y="370" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">MODEL DETAILS</text>
+  <text x="416" y="390" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">RF Pipeline · 14 features</text>
+  <text x="416" y="408" fill="rgba(255,255,255,0.25)" font-family="monospace" font-size="9">Demographics + Academic + Family</text>
+  <!-- HF badge -->
+  <rect x="416" y="418" width="80" height="14" rx="4" fill="rgba(255,180,46,0.15)"/>
+  <text x="424" y="429" fill="rgba(255,180,46,0.7)" font-family="monospace" font-size="8">HuggingFace</text>
+</svg>

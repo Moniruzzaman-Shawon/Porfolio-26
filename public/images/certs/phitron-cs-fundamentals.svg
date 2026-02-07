@@ -1,0 +1,219 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg-grad-ph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="40%" stop-color="#0e1120"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <linearGradient id="accent-grad-ph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+    <linearGradient id="border-grad-ph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.6"/>
+      <stop offset="30%" stop-color="#7c3aed" stop-opacity="0.2"/>
+      <stop offset="60%" stop-color="#4f46e5" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="title-grad-ph" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#818cf8"/>
+    </linearGradient>
+    <linearGradient id="seal-grad-ph" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4f46e5" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0.1"/>
+    </linearGradient>
+    <radialGradient id="glow-ph" cx="50%" cy="35%" r="50%">
+      <stop offset="0%" stop-color="#6366f1" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#4f46e5" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-corner-ph" cx="0%" cy="0%" r="60%">
+      <stop offset="0%" stop-color="#7c3aed" stop-opacity="0.06"/>
+      <stop offset="100%" stop-color="#7c3aed" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow-ph" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="8" flood-color="#6366f1" flood-opacity="0.2"/>
+    </filter>
+    <filter id="glow-filter-ph" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <clipPath id="cert-clip-ph">
+      <rect x="16" y="16" width="768" height="468" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad-ph)" rx="12"/>
+
+  <!-- Corner glow -->
+  <rect x="0" y="0" width="400" height="250" fill="url(#glow-corner-ph)" rx="12"/>
+
+  <!-- Outer decorative border -->
+  <rect x="4" y="4" width="792" height="492" rx="10" fill="none" stroke="url(#border-grad-ph)" stroke-width="1.5"/>
+
+  <!-- Inner border -->
+  <rect x="16" y="16" width="768" height="468" rx="8" fill="none" stroke="#6366f1" stroke-opacity="0.1" stroke-width="1"/>
+
+  <!-- Background geometric pattern (academic feel) -->
+  <g clip-path="url(#cert-clip-ph)" opacity="0.025">
+    <!-- Molecular / circuit-like pattern -->
+    <circle cx="80" cy="80" r="20" fill="none" stroke="#7c3aed" stroke-width="1"/>
+    <circle cx="80" cy="80" r="4" fill="#7c3aed"/>
+    <line x1="100" y1="80" x2="160" y2="80" stroke="#7c3aed" stroke-width="0.8"/>
+    <circle cx="160" cy="80" r="15" fill="none" stroke="#7c3aed" stroke-width="1"/>
+    <circle cx="160" cy="80" r="3" fill="#7c3aed"/>
+    <line x1="175" y1="80" x2="240" y2="120" stroke="#7c3aed" stroke-width="0.8"/>
+    <circle cx="240" cy="120" r="18" fill="none" stroke="#7c3aed" stroke-width="1"/>
+    <circle cx="240" cy="120" r="4" fill="#7c3aed"/>
+
+    <circle cx="700" cy="100" r="25" fill="none" stroke="#4f46e5" stroke-width="1"/>
+    <circle cx="700" cy="100" r="5" fill="#4f46e5"/>
+    <line x1="675" y1="100" x2="620" y2="140" stroke="#4f46e5" stroke-width="0.8"/>
+    <circle cx="620" cy="140" r="16" fill="none" stroke="#4f46e5" stroke-width="1"/>
+    <circle cx="620" cy="140" r="3" fill="#4f46e5"/>
+
+    <circle cx="120" cy="400" r="22" fill="none" stroke="#7c3aed" stroke-width="1"/>
+    <circle cx="120" cy="400" r="4" fill="#7c3aed"/>
+    <line x1="142" y1="400" x2="200" y2="380" stroke="#7c3aed" stroke-width="0.8"/>
+    <circle cx="200" cy="380" r="14" fill="none" stroke="#7c3aed" stroke-width="1"/>
+
+    <circle cx="680" cy="380" r="20" fill="none" stroke="#4f46e5" stroke-width="1"/>
+    <circle cx="680" cy="380" r="4" fill="#4f46e5"/>
+    <line x1="660" y1="380" x2="600" y2="420" stroke="#4f46e5" stroke-width="0.8"/>
+    <circle cx="600" cy="420" r="12" fill="none" stroke="#4f46e5" stroke-width="1"/>
+
+    <!-- Binary pattern accents -->
+    <text font-family="'Courier New', monospace" font-size="9" fill="#6366f1">
+      <tspan x="40" y="180">01101001 01100100</tspan>
+      <tspan x="40" y="195">10110100 11001010</tspan>
+      <tspan x="40" y="210">01010111 10101100</tspan>
+      <tspan x="600" y="220">11010010 01011010</tspan>
+      <tspan x="600" y="235">00101101 10110011</tspan>
+      <tspan x="600" y="250">01110100 11001001</tspan>
+    </text>
+  </g>
+
+  <!-- Center glow -->
+  <ellipse cx="400" cy="230" rx="300" ry="180" fill="url(#glow-ph)"/>
+
+  <!-- Ornate corner decorations (academic style) -->
+  <g stroke-width="1.2" fill="none">
+    <!-- Top-left ornament -->
+    <path d="M 40 72 L 40 40 L 72 40" stroke="#6366f1" stroke-opacity="0.3"/>
+    <path d="M 48 80 L 48 48 L 80 48" stroke="#7c3aed" stroke-opacity="0.2"/>
+    <circle cx="40" cy="40" r="3" fill="#6366f1" fill-opacity="0.3"/>
+    <!-- Top-right ornament -->
+    <path d="M 760 72 L 760 40 L 728 40" stroke="#6366f1" stroke-opacity="0.3"/>
+    <path d="M 752 80 L 752 48 L 720 48" stroke="#7c3aed" stroke-opacity="0.2"/>
+    <circle cx="760" cy="40" r="3" fill="#6366f1" fill-opacity="0.3"/>
+    <!-- Bottom-left ornament -->
+    <path d="M 40 428 L 40 460 L 72 460" stroke="#6366f1" stroke-opacity="0.3"/>
+    <path d="M 48 420 L 48 452 L 80 452" stroke="#7c3aed" stroke-opacity="0.2"/>
+    <circle cx="40" cy="460" r="3" fill="#6366f1" fill-opacity="0.3"/>
+    <!-- Bottom-right ornament -->
+    <path d="M 760 428 L 760 460 L 728 460" stroke="#6366f1" stroke-opacity="0.3"/>
+    <path d="M 752 420 L 752 452 L 720 452" stroke="#7c3aed" stroke-opacity="0.2"/>
+    <circle cx="760" cy="460" r="3" fill="#6366f1" fill-opacity="0.3"/>
+  </g>
+
+  <!-- Top accent gradient bar -->
+  <rect x="16" y="16" width="768" height="3" rx="1.5" fill="url(#accent-grad-ph)" opacity="0.6"/>
+
+  <!-- Phitron Logo / Brand mark -->
+  <g transform="translate(400, 78)" filter="url(#shadow-ph)">
+    <!-- Stylized shield / academic emblem -->
+    <path d="M 0 -32 L 26 -18 L 26 12 L 0 28 L -26 12 L -26 -18 Z" fill="none" stroke="url(#accent-grad-ph)" stroke-width="2" opacity="0.7"/>
+    <path d="M 0 -24 L 18 -13 L 18 8 L 0 20 L -18 8 L -18 -13 Z" fill="url(#seal-grad-ph)" stroke="url(#accent-grad-ph)" stroke-width="1" opacity="0.5"/>
+    <!-- "P" letter inside -->
+    <text x="0" y="6" text-anchor="middle" font-family="'Georgia', serif" font-size="22" font-weight="700" fill="#a78bfa" opacity="0.9">P</text>
+  </g>
+
+  <!-- Phitron text -->
+  <text x="400" y="130" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="700" fill="url(#title-grad-ph)" letter-spacing="5">PHITRON</text>
+
+  <!-- Decorative line with diamond -->
+  <g>
+    <line x1="160" y1="148" x2="380" y2="148" stroke="#6366f1" stroke-opacity="0.2" stroke-width="1"/>
+    <rect x="392" y="140" width="16" height="16" rx="2" transform="rotate(45, 400, 148)" fill="none" stroke="#6366f1" stroke-opacity="0.3" stroke-width="1"/>
+    <rect x="396" y="144" width="8" height="8" rx="1" transform="rotate(45, 400, 148)" fill="#6366f1" fill-opacity="0.15"/>
+    <line x1="420" y1="148" x2="640" y2="148" stroke="#6366f1" stroke-opacity="0.2" stroke-width="1"/>
+  </g>
+
+  <!-- Certificate label -->
+  <text x="400" y="180" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#7a8494" letter-spacing="5">CERTIFICATE OF COMPLETION</text>
+
+  <!-- Title -->
+  <text x="400" y="222" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="28" font-weight="700" fill="#e8eaed" letter-spacing="0.5">CS Fundamentals with Phitron</text>
+
+  <!-- Accent line under title -->
+  <line x1="260" y1="240" x2="540" y2="240" stroke="url(#accent-grad-ph)" stroke-opacity="0.5" stroke-width="2"/>
+
+  <!-- This certifies label -->
+  <text x="400" y="272" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#6b7688" letter-spacing="2">THIS CERTIFIES THAT</text>
+
+  <!-- Name -->
+  <text x="400" y="310" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="28" fill="#ffffff" font-style="italic">Moniruzzaman Shawon</text>
+
+  <!-- Name decorative underline -->
+  <g>
+    <line x1="220" y1="324" x2="390" y2="324" stroke="#6366f1" stroke-opacity="0.15" stroke-width="1"/>
+    <circle cx="400" cy="324" r="2" fill="#7c3aed" fill-opacity="0.3"/>
+    <line x1="410" y1="324" x2="580" y2="324" stroke="#6366f1" stroke-opacity="0.15" stroke-width="1"/>
+  </g>
+
+  <!-- Description -->
+  <text x="400" y="352" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#6b7688">has successfully completed the CS Fundamentals program</text>
+
+  <!-- Bottom section -->
+  <g>
+    <!-- Validation ID (left) -->
+    <g>
+      <text x="80" y="410" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#5a6475" letter-spacing="1.5">VALIDATION ID</text>
+      <text x="80" y="432" font-family="'Courier New', monospace" font-size="12" fill="#a78bfa" opacity="0.7">PHBATCH66222931004</text>
+    </g>
+
+    <!-- Academic seal (center) -->
+    <g transform="translate(400, 420)">
+      <!-- Outer ring -->
+      <circle r="32" fill="none" stroke="#6366f1" stroke-opacity="0.2" stroke-width="1"/>
+      <!-- Gear-like notches -->
+      <g stroke="#6366f1" stroke-opacity="0.15" stroke-width="1.5">
+        <line x1="0" y1="-32" x2="0" y2="-27"/>
+        <line x1="16" y1="-27.7" x2="13.9" y2="-23.4"/>
+        <line x1="27.7" y1="-16" x2="23.4" y2="-13.9"/>
+        <line x1="32" y1="0" x2="27" y2="0"/>
+        <line x1="27.7" y1="16" x2="23.4" y2="13.9"/>
+        <line x1="16" y1="27.7" x2="13.9" y2="23.4"/>
+        <line x1="0" y1="32" x2="0" y2="27"/>
+        <line x1="-16" y1="27.7" x2="-13.9" y2="23.4"/>
+        <line x1="-27.7" y1="16" x2="-23.4" y2="13.9"/>
+        <line x1="-32" y1="0" x2="-27" y2="0"/>
+        <line x1="-27.7" y1="-16" x2="-23.4" y2="-13.9"/>
+        <line x1="-16" y1="-27.7" x2="-13.9" y2="-23.4"/>
+      </g>
+      <!-- Inner rings -->
+      <circle r="24" fill="url(#seal-grad-ph)" stroke="#6366f1" stroke-opacity="0.15" stroke-width="0.5"/>
+      <circle r="18" fill="none" stroke="#7c3aed" stroke-opacity="0.12" stroke-width="0.5"/>
+      <!-- Star in center -->
+      <polygon points="0,-10 2.9,-3.1 10,-3.1 4.5,2 6.9,9 0,5 -6.9,9 -4.5,2 -10,-3.1 -2.9,-3.1" fill="#7c3aed" fill-opacity="0.2" stroke="#a78bfa" stroke-opacity="0.3" stroke-width="0.5"/>
+      <!-- Text around seal -->
+      <text y="25" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="0" fill="none">
+        <!-- invisible for spacing -->
+      </text>
+    </g>
+
+    <!-- Batch and issuer (right) -->
+    <g>
+      <text x="720" y="410" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="9" fill="#5a6475" letter-spacing="1.5">ISSUED BY</text>
+      <text x="720" y="432" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#8b95a5">Phitron</text>
+      <text x="720" y="450" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#5a6475">Programming Hero Initiative</text>
+    </g>
+  </g>
+
+  <!-- Bottom accent gradient bar -->
+  <rect x="16" y="481" width="768" height="3" rx="1.5" fill="url(#accent-grad-ph)" opacity="0.4"/>
+</svg>

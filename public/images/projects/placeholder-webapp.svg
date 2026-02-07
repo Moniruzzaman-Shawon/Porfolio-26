@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="rgba(255,255,255,0.04)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <!-- Browser mockup -->
+  <rect x="120" y="80" width="560" height="340" rx="12" fill="#111621" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Title bar -->
+  <rect x="120" y="80" width="560" height="36" rx="12" fill="#161c2a"/>
+  <rect x="120" y="104" width="560" height="12" fill="#161c2a"/>
+  <!-- Traffic lights -->
+  <circle cx="144" cy="98" r="5" fill="#ff5f57" opacity="0.7"/>
+  <circle cx="164" cy="98" r="5" fill="#ffbd2e" opacity="0.7"/>
+  <circle cx="184" cy="98" r="5" fill="#28ca42" opacity="0.7"/>
+  <!-- URL bar -->
+  <rect x="210" y="90" width="260" height="16" rx="8" fill="rgba(255,255,255,0.04)"/>
+  <!-- Content blocks -->
+  <rect x="148" y="140" width="200" height="14" rx="4" fill="rgba(0,255,136,0.15)"/>
+  <rect x="148" y="168" width="504" height="8" rx="4" fill="rgba(255,255,255,0.06)"/>
+  <rect x="148" y="184" width="440" height="8" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="148" y="200" width="480" height="8" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <!-- Card grid -->
+  <rect x="148" y="230" width="240" height="160" rx="8" fill="#1a2033" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <rect x="412" y="230" width="240" height="160" rx="8" fill="#1a2033" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- Card content -->
+  <rect x="164" y="310" width="120" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="164" y="326" width="80" height="6" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="164" y="362" width="50" height="16" rx="8" fill="rgba(0,255,136,0.12)"/>
+  <rect x="428" y="310" width="100" height="8" rx="4" fill="rgba(255,255,255,0.08)"/>
+  <rect x="428" y="326" width="140" height="6" rx="3" fill="rgba(255,255,255,0.04)"/>
+  <rect x="428" y="362" width="50" height="16" rx="8" fill="rgba(0,255,136,0.12)"/>
+  <!-- Accent line -->
+  <rect x="148" y="140" width="3" height="14" rx="1.5" fill="#00ff88" opacity="0.6"/>
+</svg>

@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme {
+  --color-void: #06080d;
+  --color-deep: #0b0e16;
+  --color-card: #111621;
+  --color-card-hover: #161c2a;
+  --color-elevated: #1a2033;
+  --color-border-subtle: rgba(255, 255, 255, 0.06);
+  --color-border-glow: rgba(0, 255, 136, 0.25);
+  --color-text-primary: #e8ecf4;
+  --color-text-secondary: #8892a6;
+  --color-text-muted: #4a5568;
+  --color-accent: #00ff88;
+  --color-accent-dim: #00cc6a;
+  --color-accent-glow: rgba(0, 255, 136, 0.15);
+  --color-accent-glow-strong: rgba(0, 255, 136, 0.3);
+
+  --font-display: var(--font-syne), sans-serif;
+  --font-body: var(--font-dm-sans), sans-serif;
+  --font-mono: var(--font-jetbrains-mono), monospace;
+
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  --animate-spin-slow: spin-slow 20s linear infinite;
+  --animate-pulse-green: pulse-green 2s ease-in-out infinite;
+  --animate-blink: blink 1s step-end infinite;
+  --animate-float-down: float-down 2s ease-in-out infinite;
+  --animate-hero-glow: hero-glow 6s ease-in-out infinite alternate;
+
+  @keyframes spin-slow {
+    to { transform: rotate(360deg); }
+  }
+  @keyframes pulse-green {
+    0%, 100% { transform: scale(1); opacity: 0.4; }
+    50% { transform: scale(1.8); opacity: 0; }
+  }
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+  @keyframes float-down {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(8px); }
+  }
+  @keyframes hero-glow {
+    0% { opacity: 0.5; transform: translate(-50%, -50%) scale(1); }
+    100% { opacity: 1; transform: translate(-50%, -50%) scale(1.15); }
+  }
+}
+
+/* ---- Global atmosphere ---- */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(
+      ellipse 80% 60% at 50% 0%,
+      rgba(0, 255, 136, 0.04) 0%,
+      transparent 60%
+    ),
+    radial-gradient(
+      ellipse 60% 40% at 80% 20%,
+      rgba(0, 212, 255, 0.03) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---- Selection ---- */
+::selection {
+  background: #00ff88;
+  color: #06080d;
+}
+
+/* ---- Custom cursor (desktop only) ---- */
+@media (pointer: fine) {
+  *, *::before, *::after {
+    cursor: none !important;
+  }
+}
+
+/* ---- Smooth scroll ---- */
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+}
+
+/* ---- Scrollbar ---- */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #06080d;
+}
+::-webkit-scrollbar-thumb {
+  background: #1a2033;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00ff88;
+}

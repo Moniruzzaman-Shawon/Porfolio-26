@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg-grad-js" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <linearGradient id="border-grad-js" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ea64" stop-opacity="0.6"/>
+      <stop offset="50%" stop-color="#00ea64" stop-opacity="0.2"/>
+      <stop offset="100%" stop-color="#00ea64" stop-opacity="0.6"/>
+    </linearGradient>
+    <linearGradient id="seal-grad-js" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00ea64" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00b84c" stop-opacity="0.15"/>
+    </linearGradient>
+    <radialGradient id="glow-js" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#00ea64" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00ea64" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="shadow-js" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="6" flood-color="#00ea64" flood-opacity="0.15"/>
+    </filter>
+    <clipPath id="cert-clip-js">
+      <rect x="16" y="16" width="768" height="468" rx="8"/>
+    </clipPath>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="500" fill="url(#bg-grad-js)" rx="12"/>
+
+  <!-- Outer border -->
+  <rect x="4" y="4" width="792" height="492" rx="10" fill="none" stroke="url(#border-grad-js)" stroke-width="1.5"/>
+
+  <!-- Inner border -->
+  <rect x="16" y="16" width="768" height="468" rx="8" fill="none" stroke="#00ea64" stroke-opacity="0.12" stroke-width="1"/>
+
+  <!-- Background code snippet decoration -->
+  <g clip-path="url(#cert-clip-js)" opacity="0.04">
+    <text font-family="'Courier New', monospace" font-size="11" fill="#00ea64">
+      <tspan x="30" y="60">function solve(arr) {</tspan>
+      <tspan x="30" y="76">  const result = arr.reduce((acc, val) =&gt; {</tspan>
+      <tspan x="30" y="92">    return acc + val;</tspan>
+      <tspan x="30" y="108">  }, 0);</tspan>
+      <tspan x="30" y="124">  return result;</tspan>
+      <tspan x="30" y="140">}</tspan>
+      <tspan x="30" y="172">const isValid = (str) =&gt; {</tspan>
+      <tspan x="30" y="188">  const stack = [];</tspan>
+      <tspan x="30" y="204">  for (let ch of str) {</tspan>
+      <tspan x="30" y="220">    if (ch === '(') stack.push(ch);</tspan>
+      <tspan x="30" y="236">    else stack.pop();</tspan>
+      <tspan x="30" y="252">  }</tspan>
+      <tspan x="30" y="268">  return stack.length === 0;</tspan>
+      <tspan x="30" y="284">};</tspan>
+      <tspan x="30" y="316">class EventEmitter {</tspan>
+      <tspan x="30" y="332">  constructor() {</tspan>
+      <tspan x="30" y="348">    this.events = {};</tspan>
+      <tspan x="30" y="364">  }</tspan>
+      <tspan x="30" y="380">  on(event, listener) {</tspan>
+      <tspan x="30" y="396">    if (!this.events[event]) {</tspan>
+      <tspan x="30" y="412">      this.events[event] = [];</tspan>
+      <tspan x="30" y="428">    }</tspan>
+      <tspan x="30" y="444">    this.events[event].push(listener);</tspan>
+      <tspan x="30" y="460">  }</tspan>
+      <tspan x="30" y="476">}</tspan>
+    </text>
+    <text font-family="'Courier New', monospace" font-size="11" fill="#00ea64">
+      <tspan x="440" y="60">async function fetchData(url) {</tspan>
+      <tspan x="440" y="76">  try {</tspan>
+      <tspan x="440" y="92">    const res = await fetch(url);</tspan>
+      <tspan x="440" y="108">    const data = await res.json();</tspan>
+      <tspan x="440" y="124">    return data;</tspan>
+      <tspan x="440" y="140">  } catch (err) {</tspan>
+      <tspan x="440" y="156">    console.error(err);</tspan>
+      <tspan x="440" y="172">  }</tspan>
+      <tspan x="440" y="188">}</tspan>
+      <tspan x="440" y="220">const debounce = (fn, delay) =&gt; {</tspan>
+      <tspan x="440" y="236">  let timer;</tspan>
+      <tspan x="440" y="252">  return (...args) =&gt; {</tspan>
+      <tspan x="440" y="268">    clearTimeout(timer);</tspan>
+      <tspan x="440" y="284">    timer = setTimeout(() =&gt; {</tspan>
+      <tspan x="440" y="300">      fn.apply(this, args);</tspan>
+      <tspan x="440" y="316">    }, delay);</tspan>
+      <tspan x="440" y="332">  };</tspan>
+      <tspan x="440" y="348">};</tspan>
+    </text>
+  </g>
+
+  <!-- Center glow -->
+  <ellipse cx="400" cy="240" rx="300" ry="200" fill="url(#glow-js)"/>
+
+  <!-- Corner decorations -->
+  <g stroke="#00ea64" stroke-opacity="0.25" stroke-width="1.5" fill="none">
+    <!-- Top-left -->
+    <path d="M 36 56 L 36 36 L 56 36"/>
+    <path d="M 44 64 L 44 44 L 64 44"/>
+    <!-- Top-right -->
+    <path d="M 764 56 L 764 36 L 744 36"/>
+    <path d="M 756 64 L 756 44 L 736 44"/>
+    <!-- Bottom-left -->
+    <path d="M 36 444 L 36 464 L 56 464"/>
+    <path d="M 44 436 L 44 456 L 64 456"/>
+    <!-- Bottom-right -->
+    <path d="M 764 444 L 764 464 L 744 464"/>
+    <path d="M 756 436 L 756 456 L 736 456"/>
+  </g>
+
+  <!-- HackerRank Logo Mark (stylized H) -->
+  <g transform="translate(400, 90)" filter="url(#shadow-js)">
+    <path d="M -24 -28 L -24 -8 L -8 -8 L -8 -28 L -14 -32 L -24 -28 Z" fill="#00ea64"/>
+    <path d="M 8 -28 L 8 -8 L 24 -8 L 24 -28 L 14 -32 L 8 -28 Z" fill="#00ea64"/>
+    <path d="M -24 8 L -24 28 L -14 32 L -8 28 L -8 8 Z" fill="#00ea64"/>
+    <path d="M 8 8 L 8 28 L 14 32 L 24 28 L 24 8 Z" fill="#00ea64"/>
+    <rect x="-8" y="-6" width="16" height="12" fill="#00ea64"/>
+  </g>
+
+  <!-- HackerRank text -->
+  <text x="400" y="142" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="14" font-weight="600" fill="#00ea64" letter-spacing="3">HACKERRANK</text>
+
+  <!-- Divider line -->
+  <line x1="200" y1="158" x2="600" y2="158" stroke="#00ea64" stroke-opacity="0.2" stroke-width="1"/>
+
+  <!-- Certificate label -->
+  <text x="400" y="188" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#8b95a5" letter-spacing="4" text-transform="uppercase">CERTIFICATE OF ACCOMPLISHMENT</text>
+
+  <!-- Title -->
+  <text x="400" y="230" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="30" font-weight="700" fill="#e8eaed" letter-spacing="1">JavaScript (Intermediate)</text>
+
+  <!-- Thin accent line -->
+  <line x1="300" y1="248" x2="500" y2="248" stroke="#00ea64" stroke-opacity="0.4" stroke-width="2"/>
+
+  <!-- Awarded to label -->
+  <text x="400" y="280" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="11" fill="#6b7688" letter-spacing="2">AWARDED TO</text>
+
+  <!-- Name -->
+  <text x="400" y="316" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="26" font-weight="400" fill="#ffffff" font-style="italic">Moniruzzaman Shawon</text>
+
+  <!-- Name underline -->
+  <line x1="240" y1="328" x2="560" y2="328" stroke="#00ea64" stroke-opacity="0.15" stroke-width="1"/>
+
+  <!-- Description -->
+  <text x="400" y="358" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="12" fill="#6b7688">for successfully completing the skill certification test</text>
+
+  <!-- Bottom section -->
+  <g>
+    <!-- Credential ID -->
+    <text x="100" y="430" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7688" letter-spacing="1">CREDENTIAL ID</text>
+    <text x="100" y="450" font-family="'Courier New', monospace" font-size="13" fill="#00ea64" opacity="0.8">e68afd243e75</text>
+
+    <!-- Seal -->
+    <g transform="translate(400, 430)">
+      <circle r="28" fill="url(#seal-grad-js)" stroke="#00ea64" stroke-opacity="0.3" stroke-width="1"/>
+      <circle r="22" fill="none" stroke="#00ea64" stroke-opacity="0.2" stroke-width="0.5"/>
+      <circle r="16" fill="none" stroke="#00ea64" stroke-opacity="0.15" stroke-width="0.5"/>
+      <text y="1" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="7" fill="#00ea64" opacity="0.6" letter-spacing="1">VERIFIED</text>
+      <path d="M -6 6 L 0 10 L 6 6" fill="none" stroke="#00ea64" stroke-opacity="0.4" stroke-width="0.8"/>
+    </g>
+
+    <!-- Date area -->
+    <text x="700" y="430" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="10" fill="#6b7688" letter-spacing="1">ISSUED</text>
+    <text x="700" y="450" text-anchor="end" font-family="'Segoe UI', Arial, sans-serif" font-size="13" fill="#8b95a5">HackerRank</text>
+  </g>
+
+  <!-- Top accent bar -->
+  <rect x="16" y="16" width="768" height="3" rx="1" fill="#00ea64" opacity="0.5"/>
+</svg>

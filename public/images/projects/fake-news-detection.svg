@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#111825"/>
+    </linearGradient>
+    <pattern id="dots" x="0" y="0" width="24" height="24" patternUnits="userSpaceOnUse">
+      <circle cx="12" cy="12" r="0.8" fill="rgba(255,255,255,0.04)"/>
+    </pattern>
+  </defs>
+  <rect width="800" height="500" fill="url(#bg)"/>
+  <rect width="800" height="500" fill="url(#dots)"/>
+  <!-- Dashboard frame -->
+  <rect x="80" y="40" width="640" height="420" rx="12" fill="#111621" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+  <!-- Header bar -->
+  <rect x="80" y="40" width="640" height="36" rx="12" fill="#161c2a"/>
+  <rect x="80" y="64" width="640" height="12" fill="#161c2a"/>
+  <circle cx="104" cy="58" r="5" fill="#ff5f57" opacity="0.7"/>
+  <circle cx="124" cy="58" r="5" fill="#ffbd2e" opacity="0.7"/>
+  <circle cx="144" cy="58" r="5" fill="#28ca42" opacity="0.7"/>
+  <text x="400" y="62" text-anchor="middle" fill="rgba(255,255,255,0.35)" font-family="monospace" font-size="11">fake-news-classifier — results</text>
+  <!-- Title -->
+  <text x="110" y="104" fill="rgba(255,255,255,0.8)" font-family="sans-serif" font-size="15" font-weight="bold">Fake News Detection</text>
+  <text x="110" y="122" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="10">NLP · TF-IDF · Binary Classification · 44,878 samples</text>
+  <!-- Model comparison bars -->
+  <text x="110" y="156" fill="rgba(255,255,255,0.4)" font-family="monospace" font-size="10">MODEL ACCURACY COMPARISON</text>
+  <!-- Gradient Boosting -->
+  <text x="110" y="180" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Gradient Boosting</text>
+  <rect x="260" y="170" width="340" height="14" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="260" y="170" width="337" height="14" rx="4" fill="rgba(0,255,136,0.3)"/>
+  <text x="608" y="181" fill="#00ff88" font-family="monospace" font-size="11" font-weight="bold">99%</text>
+  <!-- Random Forest -->
+  <text x="110" y="206" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Random Forest</text>
+  <rect x="260" y="196" width="340" height="14" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="260" y="196" width="337" height="14" rx="4" fill="rgba(0,255,136,0.25)"/>
+  <text x="608" y="207" fill="#00ff88" font-family="monospace" font-size="11" font-weight="bold">99%</text>
+  <!-- Logistic Regression -->
+  <text x="110" y="232" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Logistic Regression</text>
+  <rect x="260" y="222" width="340" height="14" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="260" y="222" width="333" height="14" rx="4" fill="rgba(0,200,255,0.2)"/>
+  <text x="608" y="233" fill="rgba(0,200,255,0.8)" font-family="monospace" font-size="11" font-weight="bold">98%</text>
+  <!-- Decision Tree -->
+  <text x="110" y="258" fill="rgba(255,255,255,0.5)" font-family="monospace" font-size="10">Decision Tree</text>
+  <rect x="260" y="248" width="340" height="14" rx="4" fill="rgba(255,255,255,0.04)"/>
+  <rect x="260" y="248" width="333" height="14" rx="4" fill="rgba(0,200,255,0.15)"/>
+  <text x="608" y="259" fill="rgba(0,200,255,0.8)" font-family="monospace" font-size="11" font-weight="bold">98%</text>
+  <!-- Divider -->
+  <line x1="110" y1="280" x2="690" y2="280" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <!-- Metrics cards row -->
+  <rect x="110" y="296" width="136" height="72" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="130" y="316" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">BEST ACCURACY</text>
+  <text x="130" y="348" fill="#00ff88" font-family="sans-serif" font-size="28" font-weight="bold">99%</text>
+  <rect x="262" y="296" width="136" height="72" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="282" y="316" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">PRECISION</text>
+  <text x="282" y="348" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="28" font-weight="bold">0.99</text>
+  <rect x="414" y="296" width="136" height="72" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="434" y="316" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">RECALL</text>
+  <text x="434" y="348" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="28" font-weight="bold">0.99</text>
+  <rect x="566" y="296" width="124" height="72" rx="8" fill="#0e1219" stroke="rgba(255,255,255,0.04)" stroke-width="1"/>
+  <text x="586" y="316" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">F1 SCORE</text>
+  <text x="586" y="348" fill="rgba(255,255,255,0.7)" font-family="sans-serif" font-size="28" font-weight="bold">0.99</text>
+  <!-- Confusion matrix mini -->
+  <text x="110" y="396" fill="rgba(255,255,255,0.3)" font-family="monospace" font-size="9">CONFUSION MATRIX</text>
+  <rect x="110" y="404" width="44" height="36" rx="4" fill="rgba(0,255,136,0.2)"/>
+  <text x="132" y="426" text-anchor="middle" fill="rgba(0,255,136,0.8)" font-family="monospace" font-size="10">5827</text>
+  <rect x="158" y="404" width="44" height="36" rx="4" fill="rgba(255,80,80,0.08)"/>
+  <text x="180" y="426" text-anchor="middle" fill="rgba(255,100,100,0.5)" font-family="monospace" font-size="10">59</text>
+  <rect x="110" y="444" width="44" height="12" rx="4" fill="rgba(255,80,80,0.08)"/>
+  <rect x="158" y="444" width="44" height="12" rx="4" fill="rgba(0,255,136,0.2)"/>
+  <!-- Dataset info -->
+  <text x="240" y="420" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="10">Train: 33,658 · Test: 11,220</text>
+  <text x="240" y="436" fill="rgba(255,255,255,0.2)" font-family="monospace" font-size="10">Classes: Fake (23,461) · Real (21,417)</text>
+</svg>

@@ -1,0 +1,25 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git -C /Users/moniruzzamanshawon/Developer/Portfolio-Claude remote:*)",
+      "Bash(git -C /Users/moniruzzamanshawon/Developer/Portfolio-Claude log --oneline -5)",
+      "Bash(npx create-next-app@latest:*)",
+      "Bash(npm install:*)",
+      "Bash(npx prisma generate:*)",
+      "Bash(npx prisma db push:*)",
+      "Bash(npx next build:*)",
+      "Bash(npx tsx:*)",
+      "Bash(npm run dev:*)",
+      "Bash(gh api:*)",
+      "Bash(curl:*)",
+      "WebFetch(domain:api.github.com)",
+      "Bash(cat:*)",
+      "WebFetch(domain:raw.githubusercontent.com)",
+      "WebFetch(domain:github.com)",
+      "Bash(python3 -m json.tool:*)",
+      "Bash(python3 -c \" import sys, json nb = json.load\\(sys.stdin\\) for cell in nb.get\\(''cells'', []\\): if cell.get\\(''cell_type''\\) == ''code'': for output in cell.get\\(''outputs'', []\\): if ''text'' in output: text = ''''.join\\(output.get\\(''text'', []\\)\\) if any\\(x in text.lower\\(\\) for x in [''accuracy'', ''precision'', ''recall'', ''f1'']\\): print\\(text\\) print\\(''---''\\) \")",
+      "Bash(python3 -c \" import sys, json nb = json.load\\(sys.stdin\\) for i, cell in enumerate\\(nb.get\\(''cells'', []\\)\\): source = ''''.join\\(cell.get\\(''source'', []\\)\\) if any\\(x in source.lower\\(\\) for x in [''tfidfvectorizer'', ''logisticreg'', ''rfc'', ''model'', ''fit'']\\): print\\(f''Cell {i}: {source[:400]}''\\) print\\(''---''\\) \")",
+      "WebFetch(domain:www.linkedin.com)"
+    ]
+  }
+}
