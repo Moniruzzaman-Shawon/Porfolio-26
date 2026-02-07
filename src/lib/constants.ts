@@ -1,4 +1,4 @@
-import type { NavItem, SocialLink, StatItem, ServiceItem, EducationItem, CertificateItem } from "@/types";
+import type { NavItem, SocialLink, StatItem, ServiceItem, EducationItem, CertificateItem, PlatformStats } from "@/types";
 
 export const siteMetadata = {
   title: "Moniruzzaman Shawon \u2014 Software Engineer",
@@ -17,6 +17,7 @@ export const navItems: NavItem[] = [
   { label: "Skills", href: "#skills" },
   { label: "Services", href: "#services" },
   { label: "Portfolio", href: "#portfolio" },
+  { label: "Leaderboard", href: "#leaderboard" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -86,6 +87,41 @@ export const categoryLabels: Record<string, string> = {
   tools: "Utilities & Tools",
   experiments: "Game & Experiments",
 };
+
+export const platformStats: PlatformStats[] = [
+  {
+    platform: "hackerrank",
+    username: "moniruzzaman_sh1",
+    profileUrl: "https://www.hackerrank.com/profile/moniruzzaman_sh1",
+    problemsSolved: 45,
+    badges: [
+      { name: "Problem Solving", stars: 3, level: "Gold" },
+      { name: "JavaScript", stars: 3, level: "Gold" },
+      { name: "Python", stars: 3, level: "Gold" },
+      { name: "C++", stars: 2, level: "Silver" },
+    ],
+  },
+  {
+    platform: "leetcode",
+    username: "moniruzzaman-shawon",
+    profileUrl: "https://leetcode.com/u/moniruzzaman-shawon/",
+    problemsSolved: 62,
+    rating: 1456,
+    rankTitle: "Knight",
+    contestRating: 1456,
+    breakdown: { easy: 30, medium: 25, hard: 7, total: 62 },
+  },
+  {
+    platform: "codeforces",
+    username: "shawon17",
+    profileUrl: "https://codeforces.com/profile/shawon17",
+    problemsSolved: 120,
+    rating: 1150,
+    rankTitle: "Pupil",
+    contestRating: 1150,
+    globalRanking: 85000,
+  },
+];
 
 export const certificates: CertificateItem[] = [
   {

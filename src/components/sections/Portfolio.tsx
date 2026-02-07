@@ -39,7 +39,8 @@ export function Portfolio() {
 
   return (
     <section id="portfolio" className="relative z-[1] py-16 sm:py-20 lg:py-[100px] bg-deep">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
+      <div className="absolute inset-0 bg-dot-grid opacity-[0.03] pointer-events-none" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6">
         <ScrollReveal>
           <SectionHeader
             label="Portfolio"

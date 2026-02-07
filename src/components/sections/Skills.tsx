@@ -15,7 +15,8 @@ const blockMeta: { key: keyof typeof skillBlocks; label: string; accent: boolean
 export function Skills() {
   return (
     <section id="skills" className="relative z-[1] py-16 sm:py-20 lg:py-[100px] bg-deep">
-      <div className="max-w-[1200px] mx-auto px-4 sm:px-6">
+      <div className="absolute inset-0 bg-dot-grid opacity-[0.03] pointer-events-none" />
+      <div className="relative max-w-[1200px] mx-auto px-4 sm:px-6">
         <ScrollReveal>
           <SectionHeader
             label="Skills"
@@ -28,7 +29,7 @@ export function Skills() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 sm:gap-5 mt-8 sm:mt-12">
           {blockMeta.map((block, i) => (
             <ScrollReveal key={block.key} delay={i * 0.1}>
-              <div className="group bg-card border border-border-subtle rounded-[16px] sm:rounded-[20px] p-5 sm:p-7 transition-all duration-400 hover:border-border-glow hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),0_0_40px_rgba(0,255,136,0.08)]">
+              <div className="group bg-card border border-border-subtle rounded-[16px] sm:rounded-[20px] p-5 sm:p-7 transition-all duration-400 hover:border-border-glow hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),0_0_40px_rgba(0,255,136,0.08),inset_0_1px_0_rgba(255,255,255,0.05)]">
                 <h3 className="font-display font-bold text-text-primary text-lg mb-4">
                   {block.label}
                 </h3>

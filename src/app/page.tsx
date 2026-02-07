@@ -10,6 +10,7 @@ import { Services } from "@/components/sections/Services";
 import { Portfolio } from "@/components/sections/Portfolio";
 import { Contact } from "@/components/sections/Contact";
 import { Certificates } from "@/components/sections/Certificates";
+import { Leaderboard } from "@/components/sections/Leaderboard";
 
 export const revalidate = 3600;
 
@@ -24,6 +25,7 @@ export default function HomePage() {
         <Services />
         <Portfolio />
         <Certificates />
+        <Leaderboard />
         <Contact />
       </main>
       <Footer />

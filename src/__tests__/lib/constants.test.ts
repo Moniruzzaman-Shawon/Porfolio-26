@@ -10,6 +10,7 @@ import {
   education,
   certificates,
   categoryLabels,
+  platformStats,
 } from "@/lib/constants";
 
 describe("constants integrity", () => {
@@ -151,6 +152,55 @@ describe("constants integrity", () => {
       expect(categoryLabels.ai).toBeTruthy();
       expect(categoryLabels.tools).toBeTruthy();
       expect(categoryLabels.experiments).toBeTruthy();
+    });
+  });
+
+  describe("platformStats", () => {
+    it("has exactly 3 platform entries", () => {
+      expect(platformStats).toHaveLength(3);
+    });
+
+    it("covers all three platforms", () => {
+      const platforms = platformStats.map((p) => p.platform);
+      expect(platforms).toContain("hackerrank");
+      expect(platforms).toContain("leetcode");
+      expect(platforms).toContain("codeforces");
+    });
+
+    it("all entries have required fields", () => {
+      platformStats.forEach((p) => {
+        expect(p.username).toBeTruthy();
+        expect(p.profileUrl).toMatch(/^https?:\/\//);
+        expect(p.problemsSolved).toBeGreaterThan(0);
+      });
+    });
+
+    it("leetcode has a problem breakdown", () => {
+      const leetcode = platformStats.find((p) => p.platform === "leetcode");
+      expect(leetcode?.breakdown).toBeDefined();
+      expect(leetcode!.breakdown!.easy + leetcode!.breakdown!.medium + leetcode!.breakdown!.hard).toBe(leetcode!.breakdown!.total);
+    });
+
+    it("hackerrank has badges", () => {
+      const hackerrank = platformStats.find((p) => p.platform === "hackerrank");
+      expect(hackerrank?.badges).toBeDefined();
+      expect(hackerrank!.badges!.length).toBeGreaterThan(0);
+      hackerrank!.badges!.forEach((badge) => {
+        expect(badge.name).toBeTruthy();
+        expect(badge.stars).toBeGreaterThanOrEqual(1);
+        expect(badge.stars).toBeLessThanOrEqual(5);
+      });
+    });
+
+    it("codeforces has rating and rank", () => {
+      const codeforces = platformStats.find((p) => p.platform === "codeforces");
+      expect(codeforces?.rating).toBeDefined();
+      expect(codeforces?.rankTitle).toBeTruthy();
+    });
+
+    it("has unique platforms", () => {
+      const platforms = platformStats.map((p) => p.platform);
+      expect(new Set(platforms).size).toBe(platforms.length);
     });
   });
 });

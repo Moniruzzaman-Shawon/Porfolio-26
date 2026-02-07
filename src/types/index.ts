@@ -60,3 +60,31 @@ export interface CertificateItem {
   thumbnailUrl: string;
   issuerLogo: "hackerrank" | "phitron";
 }
+
+export type PlatformId = "hackerrank" | "leetcode" | "codeforces";
+
+export interface PlatformBadge {
+  name: string;
+  stars: 1 | 2 | 3 | 4 | 5;
+  level: string;
+}
+
+export interface ProblemBreakdown {
+  easy: number;
+  medium: number;
+  hard: number;
+  total: number;
+}
+
+export interface PlatformStats {
+  platform: PlatformId;
+  username: string;
+  profileUrl: string;
+  rating?: number;
+  rankTitle?: string;
+  globalRanking?: number;
+  problemsSolved: number;
+  breakdown?: ProblemBreakdown;
+  contestRating?: number;
+  badges?: PlatformBadge[];
+}

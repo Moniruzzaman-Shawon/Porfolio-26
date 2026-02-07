@@ -28,7 +28,17 @@
   --animate-blink: blink 1s step-end infinite;
   --animate-float-down: float-down 2s ease-in-out infinite;
   --animate-hero-glow: hero-glow 6s ease-in-out infinite alternate;
+  --animate-shimmer: shimmer 3s infinite;
+  --animate-glow-pulse: glow-pulse 3s infinite;
 
+  @keyframes shimmer {
+    0% { background-position: -200% 0; }
+    100% { background-position: 200% 0; }
+  }
+  @keyframes glow-pulse {
+    0%, 100% { box-shadow: 0 0 8px rgba(0, 255, 136, 0.15); }
+    50% { box-shadow: 0 0 20px rgba(0, 255, 136, 0.3); }
+  }
   @keyframes spin-slow {
     to { transform: rotate(360deg); }
   }
@@ -101,4 +111,10 @@ html {
 }
 ::-webkit-scrollbar-thumb:hover {
   background: #00ff88;
+}
+
+/* ---- Dot grid background ---- */
+.bg-dot-grid {
+  background-image: radial-gradient(circle, rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+  background-size: 24px 24px;
 }

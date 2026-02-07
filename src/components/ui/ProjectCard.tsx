@@ -17,7 +17,7 @@ export default function ProjectCard({ project }: ProjectCardProps) {
     <div
       className={cn(
         "group bg-card border border-border-subtle rounded-[16px] sm:rounded-[20px] overflow-hidden transition-all duration-400",
-        "hover:border-border-glow hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),0_0_40px_rgba(0,255,136,0.15)]",
+        "hover:border-border-glow hover:-translate-y-1 hover:shadow-[0_20px_60px_rgba(0,0,0,0.3),0_0_40px_rgba(0,255,136,0.15),inset_0_1px_0_rgba(255,255,255,0.05)]",
         project.featured && "md:col-span-2"
       )}
       onMouseEnter={() => setIsHovered(true)}
